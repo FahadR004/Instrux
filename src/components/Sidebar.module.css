@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(/src/components/Assets/Poppins/Poppins-Regular.ttf);
+  }
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(/src/components/Assets/Poppins/Poppins-Medium.ttf);
+  }
+
+
+.sidebar {
+    background-color: #2b2b2c;
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+}
+
+.ul {
+    font-family: Poppins-Medium;
+    color: #FFFFFF;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.ul p {
+    margin: 5px 0px;
+}
+
+.image {
+    width: 100px;
+}
+
+.figure {
+    margin: 0px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(19, 19, 19);
+}
+
+.figcaption {
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+}
+
+.superuser {
+    text-align: center;
+    color: #676565;
+}
+
+.heading {
+    padding: 10px;
+}
+
+.icon {
+    width: 22px;
+    height: 21px;
+}
+
+.sub-headings {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 7px;
+}
+
+.sub-headings:hover {
+    background-color: #00c768;
+    cursor: pointer;
+}

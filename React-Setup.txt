@@ -1,0 +1,11 @@
+npx create react <project name>
+OR
+npm create vite@latest
+Project name: .
+Select React
+Select Javascript+SWC
+npm i
+npm run dev
+Delete assets and public folder. 
+Delete index.css and remove all from App.jsx.
+

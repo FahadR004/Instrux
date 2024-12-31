@@ -1,0 +1,131 @@
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url(/src/components/Assets/Poppins/Poppins-Medium.ttf);
+  }
+  
+  
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height for centering vertically */
+    margin: 0px auto;
+    width: 92%;
+  }
+  
+  .form{
+    display: flex;  
+    max-width: 700px;
+    min-width: 500px;
+    background-color: #ffffff;
+    box-shadow: 15px 11px 5px #c5cad1;
+    border-radius: 32px;
+    transform: scale(0.9);
+    transition: transform 1s ease-in-out;
+
+  }
+  
+  .logo-side {
+    background-color: #052883;
+    padding: 25px;
+    border-radius: 32px 0px 0px 32px;
+    display: inline-flex;
+  }
+  
+
+  .logo-side .logo1 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    margin: 0px;
+  }
+  
+  .logo-side .logo2 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    margin: 0px;
+  }
+  
+  .input-side {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 0px 30px 0px 27px;  
+    border-radius: 0px 32px 32px 0px;
+    transform: scale(0.9);  /* Equivalent to ScaleX(0.7) and ScaleY(0.7)*/
+  }
+  
+  .name, .email, .password, .confirm-password, .organization-id, .name-label, .email-label, .password-label, .confirm-password-label, .org-id-label {
+    display: block;
+    width: 100%;
+    margin: 10px 0 5px 0;
+    text-align: left;
+  }
+  
+  .name, .email, .password, .confirm-password, .organization-id {
+    border: 1px solid #F5F5F5;
+    padding: 13px 11px;
+    border-radius: 26px;
+    font-family: Poppins-Regular, Tahoma, sans-serif;
+    border-color: #C4C4C4;
+    box-shadow: 2px 2px 5px #d3d6d9;
+    margin-right: 10px;
+  }
+
+  .terms-label, .terms-input {
+    margin: 1rem;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .welcome {
+    margin-bottom: 0.1rem;
+  }
+  
+  .main-para, .account {
+    margin-top: 0.1rem;
+    color:#636364;
+    font-size: smaller;
+  }
+  
+  .signup-btn {
+    background-color: #052883;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 50px;
+    font-family: Poppins-Medium, Tahoma, sans-serif;
+    box-shadow: 2px 1px 5px #d3d6d9;
+    letter-spacing: 1px;
+    font-size: medium;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+  }
+
+  .signup-btn:disabled {
+    cursor: default;
+    pointer-events: none;
+    background-color: #2a3d6d;
+}
+  
+  .signup-btn:hover {
+    background-color: #042066;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .errmsg {
+    background-color: rgb(255, 120, 120);
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 5px 13px;
+    margin-bottom: 0.1rem;
+  }
+
+  
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
