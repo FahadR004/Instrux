@@ -5,7 +5,7 @@ import styles from "../styles/Organization.module.css"
 const Organization = () => {
     return ( 
         <>
-        <div className={styles.dashboard}>
+        <div className={styles.body}>
             <Sidebar/>
             <Navbar/>
             <p>This is the Organization page</p>

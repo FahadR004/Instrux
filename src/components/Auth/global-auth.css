@@ -4,6 +4,12 @@
     src: url(/src/components/Assets/Poppins/Poppins-Regular.ttf);
   }
 
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
 
 body {
     width: 100%;

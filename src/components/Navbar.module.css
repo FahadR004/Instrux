@@ -21,30 +21,31 @@
     font-size: larger;
     list-style: none;
     margin: 0px;
-    height: 40px;
+    height: 80px;
   }
 
 .menu {
   background-color: rgb(19, 19, 19);
   padding: 3px;
-  margin: 0 10px 0px 250px;
+  margin-right: 10px;
+}
+
+.ul a {
+  margin-left: auto;
 }
 
 .logout-btn {
-    margin-left: auto;
-    background-color: #ffffff;
+    background-color: #007ec7;
     border: 0px;
-    border-radius: 2px;
+    border-radius: 5px;
     font-family: Poppins-Medium;
     margin-right: 10px;
-    padding: 5px;
+    padding: 8px 10px;
+    color: #ffffff;
+    font-size: 15px;
 }
 
 .logout-btn:hover {
-  background-color: #d3d3d3;
+  background-color: #016ba8;
   cursor: pointer;
-}
-
-.content {
-  margin-right: 250px;
 }

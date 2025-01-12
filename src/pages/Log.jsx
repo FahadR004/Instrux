@@ -5,7 +5,7 @@ import styles from "../styles/Log.module.css"
 const Log = () => {
     return ( 
         <>
-        <div className={styles.dashboard}>
+        <div className={styles.body}>
             <Sidebar/>
             <Navbar/>
             <p>This is the warnings log page</p>

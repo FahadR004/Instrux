@@ -5,7 +5,7 @@ import styles from "../styles/Trends.module.css"
 const Trends = () => {
     return ( 
         <>
-        <div className={styles.dashboard}>
+        <div className={styles.body}>
             <Sidebar/>
             <Navbar/>
             <p>This is the trends page</p>

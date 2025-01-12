@@ -1,7 +1,6 @@
 import styles from "./Navbar.module.css"
-import Content from "./Content"
 import Menu from "../components/Assets/hamburger.png"
-import GrayMenu from "../components/Assets/menu-gray.png"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return ( 
@@ -11,11 +10,10 @@ const Navbar = () => {
                     <img className={styles.menu} src={Menu} alt="Menu Icon"></img>
                 </li>
                 <li>Instrux</li>
-                <button className={styles["logout-btn"]}>Logout</button>
+                <Link to="/login">
+                    <button className={styles["logout-btn"]}>Logout</button>
+                </Link>
             </ul>
-            <section className={styles.content}>
-               <Content/>
-            </section>
         </>
      );
 }

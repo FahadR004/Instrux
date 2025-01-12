@@ -5,7 +5,7 @@ import styles from "../styles/Reports.module.css"
 const Reports = () => {
     return ( 
         <>
-        <div className={styles.dashboard}>
+        <div className={styles.body}>
             <Sidebar/>
             <Navbar/>
             <p>This is the reports page</p>

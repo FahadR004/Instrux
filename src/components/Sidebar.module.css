@@ -10,10 +10,15 @@
 
 
 .sidebar {
-    background-color: #2b2b2c;
-    width: 250px;
-    height: 100vh;
-    position: absolute;
+  background-color: #2b2b2c;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 250px;
+  border-right: 1px solid var(--line-clr);
+  position: sticky;
+  top: 0;
+  align-self: start;
+  text-wrap: nowrap;
 }
 
 .ul {
@@ -27,6 +32,11 @@
 
 .ul p {
     margin: 5px 0px;
+}
+
+.ul a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .image {
@@ -66,11 +76,18 @@
 .sub-headings {
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding: 10px;
     gap: 7px;
 }
 
-.sub-headings:hover {
-    background-color: #00c768;
-    cursor: pointer;
+.sub-headings p {
+    transition: 0.2s ease-in-out;    
 }
+
+
+.sub-headings:hover {
+    background-color: #007ec7;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+

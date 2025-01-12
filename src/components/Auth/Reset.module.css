@@ -16,7 +16,8 @@
   
   .form {
     display: flex;
-    max-width: 500px;
+    justify-content: center;
+    align-items: center;
     min-width: 430px;
     background-color: #ffffff;
     box-shadow: 15px 11px 5px #c5cad1;
@@ -24,26 +25,17 @@
   }
   
   .logo-side {
-    width: 20%;
+    padding: 15px;
     background-color: #052883;
-    padding: 10px 0px 10px 13px;
     border-radius: 32px 0px 0px 32px;
     display: inline-flex;
   }
   
-  .logo-side .logo1 {
+  .logo-side .logo1, .logo-side .logo2 {
     writing-mode: vertical-lr;
     text-orientation: upright;
     color: white;
     margin: 0px;
-  }
-  
-  .logo-side .logo2 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    color: white;
-    margin: 0px;
-    padding-right: 12px;
   }
   
   .input-side {
@@ -95,6 +87,7 @@
     font-size: medium;
     letter-spacing: 1px;
     margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
   }
   
   .reset-btn:hover {

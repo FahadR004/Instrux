@@ -5,7 +5,7 @@ import styles from "../styles/Intelligence.module.css"
 const Intelligence = () => {
     return ( 
         <>
-        <div className={styles.dashboard}>
+        <div className={styles.body}>
             <Sidebar/>
             <Navbar/>
             <p>This is the Intelligence page</p>

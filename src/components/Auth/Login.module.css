@@ -14,7 +14,7 @@
   }
   
   .form {
-    max-width: 500px;
+    max-width: 450px;
     background-color: #ffffff;
     box-shadow: 15px 11px 5px #c5cad1;
     display: flex;
@@ -22,22 +22,14 @@
   }
   
   .logo-side {
-    width: 20%;
     background-color: #052883;
-    padding: 10px 5px 10px 10px;
+    padding: 10px;
     border-radius: 32px 0px 0px 32px;
     display: inline-flex;
   }
 
   
-  .logo-side .logo1 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    color: white;
-    margin: 0px;
-  }
-  
-  .logo-side .logo2 {
+  .logo-side .logo1, .logo-side .logo2 {
     writing-mode: vertical-lr;
     text-orientation: upright;
     color: white;
@@ -45,7 +37,6 @@
   }
   
   .input-side {
-    width: 80%;
     background-color: #ffffff;
     padding: 50px 30px 50px 27px;  
     border-radius: 0px 32px 32px 0px;

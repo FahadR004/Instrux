@@ -1,0 +1,12 @@
+.body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+
+.dir {
+    height: 40px;
+    background: #d5d5d5;
+    padding-left: 10px;
+    text-align: left;
+}

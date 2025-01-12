@@ -22,14 +22,14 @@ function App() {
               <Route path="/login" element={<Login/>}/>
               <Route path="/signup" element={<Signup/>}/>
               <Route path="/reset" element={<Reset/>}/>
-              <Route path="/dashboard" element={<Home/>}/>
-              <Route path="/dashboard/trends" element={<Trends/>}/>
-              <Route path="/dashboard/reports" element={<Reports/>}/>
-              <Route path="/dashboard/warning-logs" element={<Log/>}/>
-              <Route path="/dashboard/intelligence" element={<Intelligence/>}/>
-              <Route path="/dashboard/organization" element={<Organization/>}/>
-              <Route path="/dashboard/users" element={<Users/>}/>
-              <Route path="/dashboard/utility-bill-auditing" element={<UtilityBill/>}/>
+              <Route path="/dashboard" element={<Home name="Live Monitoring"/>}/>
+              <Route path="/trends" element={<Trends name="Trends"/>}/>
+              <Route path="/reports" element={<Reports name="Reports"/>}/>
+              <Route path="/warning-logs" element={<Log name="Warning Logs"/>}/>
+              <Route path="/intelligence" element={<Intelligence name="Intelligence"/>}/>
+              <Route path="/organization" element={<Organization name="Organization"/>}/>
+              <Route path="/users" element={<Users name="Users"/>}/>
+              <Route path="/utility-bill-auditing" element={<UtilityBill name="Utility Bill Auditing"/>}/>
               <Route path="*" element={<h1>404 Not Found</h1>}/>
             </Routes>
         </div>
