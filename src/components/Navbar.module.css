@@ -12,11 +12,10 @@
 
 .ul {
     display: flex;  
-    justify-content:flex-start;
     align-items: center ;
     background-color: #2b2b2c;
-    padding: 15px 12px;
-    color: white;
+    padding: 15px 50px;
+    color: var(--font-color);
     font-family: Poppins-Medium;
     font-size: larger;
     list-style: none;
@@ -28,17 +27,32 @@
   background-color: rgb(19, 19, 19);
   padding: 3px;
   margin-right: 10px;
+  border-radius: 5px;
+  transition: 0.3s background-color ease-in-out;
 }
 
-.ul a {
-  margin-left: auto;
+.menu:hover {
+  cursor: pointer;
+  background-color: var(--highlighter-blue);
 }
+
+.bell-item {
+  margin-left: auto;
+  padding: 10px 10px;
+  margin-top: 0.5rem;
+}
+
+.bell-item:hover {
+  cursor: pointer;
+}
+
 
 .logout-btn {
-    background-color: #007ec7;
+    background-color:var(--highlighter-blue);
     border: 0px;
     border-radius: 5px;
     font-family: Poppins-Medium;
+    margin-left: 20px;
     margin-right: 10px;
     padding: 8px 10px;
     color: #ffffff;
@@ -46,6 +60,6 @@
 }
 
 .logout-btn:hover {
-  background-color: #016ba8;
+  background-color: var(--hover-blue);
   cursor: pointer;
 }

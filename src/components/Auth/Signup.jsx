@@ -112,8 +112,8 @@ const Signup = () => {
           <main className={styles.main}>
             <form className={styles.form} onSubmit={handleSubmit} method="POST">
               <div className={styles["logo-side"]}>   
-                <h1 className={styles.logo1}>INSTRUX<span>FFFFFFFF</span></h1>
-                <h1 className={styles.logo2}><span>FFF</span>REGISTRATION</h1>
+                <h1 className={styles.logo1}>INSTRUX<span className={styles.hidden}>FFFFFFFF</span></h1>
+                <h1 className={styles.logo2}><span className={styles.hidden}>FFF</span>REGISTRATION</h1>
               </div>
               <div className={styles["input-side"]}>
                 <h3 className={styles.welcome}>REGISTER</h3>

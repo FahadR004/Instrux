@@ -2,3 +2,19 @@
     display: grid;
     grid-template-columns: auto 1fr;
 }
+
+.dir {
+    background: #d5d5d5;
+    color: #42434a;
+    padding: 10px 50px;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.unauthorized {
+    background-color: rgb(255, 120, 120);
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 15px;
+}

@@ -1,0 +1,14 @@
+Live Monitoring
+	6 Gauge Meters
+	2 Bar Graphs for voltage and current thd
+	1 multi-color multi-line graph 
+Trends
+	1 Line Graph
+	1 Bar Graph
+	1 Line Graph
+	1 Line Graph
+Intelligence 
+	1 Line Graph
+	1 Bar Chart for each interval defined
+
+	

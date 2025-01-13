@@ -1,0 +1,31 @@
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.gear-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #888888;
+    border-right: none;
+    padding: 9.5px;
+    background-color: white;
+}
+
+.device-address {
+    color:  #888888;
+    border: 1px solid #888888;
+    width: 90%;
+    padding: 11px;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.device-address:focus {
+    outline: none;
+}
+

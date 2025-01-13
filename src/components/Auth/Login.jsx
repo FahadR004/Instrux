@@ -73,8 +73,8 @@ const Login = () => {
       <main className={styles.main}>
         <form className={styles.form} onSubmit={handleSubmit} method="POST">
           <div className={styles["logo-side"]}>   
-            <h2 className={styles.logo1}>INSTRUX<span>FAHAD</span></h2>
-            <h2 className={styles.logo2}><span>FFF</span>DASHBOARD</h2>
+            <h2 className={styles.logo1}>INSTRUX<span className={styles.hidden}>FAHAD</span></h2>
+            <h2 className={styles.logo2}><span className={styles.hidden}>FFF</span>DASHBOARD</h2>
           </div>
           <div className={styles["input-side"]}>
             <h3 className={styles.welcome}>WELCOME BACK</h3>

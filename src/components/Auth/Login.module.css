@@ -28,7 +28,11 @@
     display: inline-flex;
   }
 
-  
+  .hidden {
+    color:#052883;
+    user-select: none;
+  }
+
   .logo-side .logo1, .logo-side .logo2 {
     writing-mode: vertical-lr;
     text-orientation: upright;

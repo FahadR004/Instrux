@@ -80,8 +80,8 @@ const Reset = () => {
         <main className={styles.main}>
           <form className={styles.form} onSubmit={handleSubmit} method="POST">
             <div className={styles["logo-side"]}>   
-              <h2 className={styles.logo1}>INSTRUX<span>FFF</span></h2>
-              <h2 className={styles.logo2}><span>FFF</span>SECURITY<span>F</span></h2>
+              <h2 className={styles.logo1}>INSTRUX<span className={styles.hidden}>FFF</span></h2>
+              <h2 className={styles.logo2}><span className={styles.hidden}>FFF</span>SECURITY<span>F</span></h2>
             </div>
             <div className={styles["input-side"]}>
               <h3 className={styles.welcome}>RESET PASSWORD</h3>

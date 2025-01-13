@@ -1,4 +1,8 @@
 import styles from "./Sidebar.module.css"
+import AuthContext, { AuthProvider } from "../context/AuthProvider";
+import { Link } from "react-router-dom"
+import { useContext } from "react";
+
 
 import PFP from "../components/Assets/user.png"
 import Monitor from "../components/Assets/computer.png"
@@ -9,11 +13,12 @@ import Test from "../components/Assets/test.png"
 import OrgImage from "../components/Assets/diagram.png"
 import WhitePFP from "../components/Assets/account.png"
 import UtilityBill from "../components/Assets/utility-bill.png"
-import { Link } from "react-router-dom"
 
 
 
 const Sidebar = (name) => {
+
+    const { auth } = useContext(AuthContext);
 
     return (  
         <>
@@ -21,7 +26,7 @@ const Sidebar = (name) => {
             <figure className={styles.figure}>
                     <img className={styles.image} src={PFP} alt="Anonymous Profile Image"></img>
                     <figcaption className={styles.figcaption}>SUPER USER</figcaption>
-                    <div className={styles.superuser}>Super User</div>
+                    <div className={styles.superuser}>{auth.name}</div>
             </figure>
             <ul className={styles.ul}>
                 <li className={styles.heading}>ENGINEERING</li>

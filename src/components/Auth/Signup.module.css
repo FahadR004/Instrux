@@ -31,13 +31,17 @@
     display: inline-flex;
     width: 20%;
   }
-  
 
   .logo-side .logo1, .logo-side .logo2 {
     writing-mode: vertical-lr;
     text-orientation: upright;
     color: white;
     margin: 0px;
+  }
+
+  .hidden {
+    color:#052883;
+    user-select: none;
   }
 
   .input-side {

@@ -37,6 +37,11 @@
     color: white;
     margin: 0px;
   }
+
+  .hidden {
+    color:#052883;
+    user-select: none;
+  }
   
   .input-side {
     width: 80%;
