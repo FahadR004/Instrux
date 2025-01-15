@@ -17,7 +17,6 @@
     margin: 0px;
   }
 
-
 body {
     width: 100%;
     margin: 0;
@@ -26,7 +25,6 @@ body {
     background-color: var(--bg-color);
     font-family: Poppins-Regular, sans-serif;
   }
-  
 
 fieldset {
     border: 0px;

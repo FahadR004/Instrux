@@ -3,6 +3,16 @@
     grid-template-columns: auto 1fr;
 }
 
+.body.sidebar-collapsed {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 .dir {
     background: #d5d5d5;
     color: #42434a;
@@ -22,8 +32,8 @@
     justify-content: center;
     align-items: center;
     gap: 0px;   
-    margin: 20px;
-    padding: 20px;
+    margin: 5px;
+    padding: 15px;
 }
 
 .dropdown select, .dropdown input{
@@ -40,6 +50,10 @@
     padding: 9.5px;
 }
 
+.dropdown input:focus, .dropdown select:focus    {
+    outline: none;
+}
+
 .dropdown p {
     display: flex;
     justify-content: center;
@@ -50,8 +64,12 @@
     background-color: white;
 }
 
-.dropdown .location-p, .dropdown .device-p {
+.dropdown .location-p, .dropdown .device-p{
     padding: 8.8px 15px;
+}
+
+.dropdown .duration-label {
+    padding: 9.5px;
 }
 
 .buttons {
@@ -61,6 +79,7 @@
     flex-wrap: wrap;
     gap: 50px;
     padding: 10px;
+    margin: 20px;
 }
 
 .buttons button {

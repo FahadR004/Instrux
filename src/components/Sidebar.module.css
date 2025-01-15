@@ -10,6 +10,8 @@
 
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   background-color: #2b2b2c;
   box-sizing: border-box;
   height: 100vh;
@@ -18,7 +20,20 @@
   top: 0;
   align-self: start;
   text-wrap: nowrap;
+  bottom: 0;
+  font-size: 13px;
+  transition: 300ms ease-in-out;
+  overflow: hidden;
+  overflow-y: auto;
 }
+
+.sidebar.close {
+    position: fixed;
+    left: 0;
+    width: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .ul {
     font-family: Poppins-Medium;
@@ -89,4 +104,24 @@
     cursor: pointer;
     letter-spacing: 0.1em;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2b2b2c; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 

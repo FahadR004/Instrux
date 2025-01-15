@@ -3,6 +3,17 @@
     grid-template-columns: auto 1fr;
 }
 
+.body.sidebar-collapsed {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .dir {
     background: #d5d5d5;
     color: #42434a;

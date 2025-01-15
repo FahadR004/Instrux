@@ -3,10 +3,122 @@
     grid-template-columns: auto 1fr;
 }
 
+.body.sidebar-collapsed {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 .dir {
     background: #d5d5d5;
     color: #42434a;
     padding: 10px 50px;
     text-align: left;
     margin-bottom: 1rem;
+}
+
+.duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duration input {
+    color:  #888888;
+    border: 1px solid #888888;
+    width: 87%;
+    padding: 11px;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.duration-label {
+    background-color: white;
+    border: 1px solid #888888;
+    padding: 11.2px;
+    border-right: none;
+}
+
+.device-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.device-details .address, .device-details .device {
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin: 20px;
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.labels label {
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: var(--highlighter-blue);
+    margin-bottom: 20px;
+}
+
+.labels input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked  + label{
+    background-color: var(--hover-blue);
+   cursor: pointer;
+}
+
+
+.labels label:hover, .labels input[type="checkbox"]:hover {
+    cursor: pointer;
+    background-color: var(--hover-blue);
+}
+
+
+
+.graphs {
+    margin: 50px 0px;
+}
+
+.graph-container{
+    background-color: white;
+    width: 90%;
+    height: 400px;
+    margin: 0px auto;
+}
+
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-div button {
+    color: var(--font-color);
+    background-color: var(--highlighter-blue);
+    padding: 10px;
+    width: 300px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-div button:hover {
+    background-color: var(--hover-blue);
+    cursor: pointer;
 }

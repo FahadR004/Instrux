@@ -1,10 +1,18 @@
 import styles from "./Navbar.module.css"
 import { Link } from "react-router-dom";
+import { SidebarContext } from "../App";
+import { useContext } from "react";
 
 const Navbar = () => {
+
+    const { closeVal, setCloseVal } = useContext(SidebarContext);
     
     function toggle() {
-        console.log("Function is working")
+        if (closeVal) {
+            setCloseVal(false);
+        } else {
+            setCloseVal(true);
+        }
     }
 
     return ( 

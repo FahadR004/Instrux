@@ -2,6 +2,7 @@ import styles from "./Sidebar.module.css"
 import AuthContext, { AuthProvider } from "../context/AuthProvider";
 import { Link } from "react-router-dom"
 import { useContext } from "react";
+import { SidebarContext } from "../App";
 
 
 import PFP from "../components/Assets/user.png"
@@ -20,9 +21,11 @@ const Sidebar = (name) => {
 
     const { auth } = useContext(AuthContext);
 
+    const { closeVal } = useContext(SidebarContext);
+
     return (  
         <>
-        <div className={styles.sidebar}>
+        <div className={closeVal ? `${styles.sidebar} ${styles.close}` : styles['sidebar']}>
             <figure className={styles.figure}>
                     <img className={styles.image} src={PFP} alt="Anonymous Profile Image"></img>
                     <figcaption className={styles.figcaption}>SUPER USER</figcaption>
@@ -30,11 +33,12 @@ const Sidebar = (name) => {
             </figure>
             <ul className={styles.ul}>
                 <li className={styles.heading}>ENGINEERING</li>
+                    
                 <Link to="/dashboard">
                     <li className={styles["sub-headings"]}>
                         <img className={styles.icon} src={Monitor} alt="Monitor Icon"></img>
                         <p>Live Monitoring</p>
-                    </li>
+                    </li>   
                 </Link>
                 <Link to="/trends">
                     <li className={styles["sub-headings"]}>
@@ -84,7 +88,10 @@ const Sidebar = (name) => {
 
             </ul>   
         </div>
-        
+        {/* <div className={closeVal ? styles['sidebar'] : styles['close']}>
+                    
+        </div>
+         */}
         </>
     );
 }

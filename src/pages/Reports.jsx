@@ -1,14 +1,19 @@
+import React, { useContext } from "react";
+import { SidebarContext } from "../App";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import styles from "../styles/Reports.module.css"
 
 const Reports = (props) => {
+
+        const { closeVal } = useContext(SidebarContext);
+
     return ( 
         <>
-        <div className={styles.body}>
+        <div className={closeVal ? `${styles['body']} ${styles['sidebar-collapsed']}` : styles['body']}>
             <Sidebar/>
-            <main className={styles["reports-page"]}>
+            <main className={styles.main}>
                 <Navbar/>
                 <p className={styles.dir}>Dashboard / {props.name}</p>
                 <div className={styles["main-content"]}>
@@ -21,14 +26,10 @@ const Reports = (props) => {
                                 <option value="Monthly">Monthly</option>
                             </select>
                     </div>
-                    <div className={styles.dropdown}>
-                        <div className={styles["duration-label"]}>
-                            <p>Duration</p>
+                        <div className={styles.dropdown}>
+                            <p className={styles["duration-label"]}>Duration</p>
+                            <input type="date" id="calendar"/>
                         </div>
-                            <select id="duration-options" className={styles["duration-options"]}>
-                                <option selected value="Duration">mm / dd / yyyy</option>
-                            </select>
-                    </div>
                     <div className={styles.dropdown}>
                         <div className={styles["location-label"]}>
                             <p className={styles["location-p"]}>Location</p>
