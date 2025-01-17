@@ -1,0 +1,85 @@
+.body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.body.sidebar-collapsed {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.dir {
+    background: #d5d5d5;
+    color: #42434a;
+    padding: 10px 50px;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card .header {
+    text-align: left !important;
+    padding: 20px 10px;
+}
+
+.card .table {
+    width: 90%;
+    border-collapse: collapse;
+ 
+}
+
+.table th {
+    padding: 10px;
+}
+
+.table .select {
+    margin: 5px 0px;
+    padding: 10px;
+    border-color: var(--light-grey);
+    color: var(--grey);
+}
+
+.table tr {
+    background-color: var(--light-grey);
+}
+
+.table td {
+    padding: 8px;
+}
+
+.table .update-button {
+    background-color: var(--highlighter-blue);
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+}
+
+
+.table .logs {
+    color: var(--font-color);
+    background-color: var(--golden);
+}
+
+.table .logs text {
+    padding: 10px;
+}

@@ -22,3 +22,189 @@
     text-align: left;
     margin-bottom: 1rem;
 }
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #d8d8d8;
+    width: 90%;
+    height: 400px;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.device-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.device-details .address, .device-details .device {
+    border: 1px solid var(--black);
+    background-color: var(--grey);
+    color: var(--font-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.bill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.billbox {
+    width: 270px;
+    padding: 10px;
+    background-color: var(--highlighter-blue);
+    border-radius: 5px;
+    color: var(--font-color)
+}
+
+.bill {
+    color: var(--black);
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+
+.mid-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.duration input {
+    color:  var(--light-grey);
+    border: 1px solid var(--light-grey);
+    width: 87%;
+    padding: 11px;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.duration-label {
+    background-color: white;
+    border: 1px solid var(--light-grey);
+    padding: 11.2px;
+    border-right: none;
+}
+
+.projected {
+    background-color: var(--grey);
+    border-radius: 5px;
+    color: var(--font-color);
+    padding: 10px 15px;
+}
+
+.graph-container, .popup-graph{
+    background-color: white;
+    width: 90%;
+    height: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.table {
+    width: 55%;
+    padding: 10px;
+}
+
+.table, .table td {
+    border: 1px solid var(--light-grey);
+    height: 50px;
+}
+
+.table th {
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 8px;
+    font-weight: lighter;
+}   
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.table td {
+    border: none;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.display-graph .graph-btn, .delete .delete-btn {
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    fill: #626262;
+}
+
+.display-graph .graph-btn:hover, .delete .delete-btn:hover {
+    cursor: pointer;
+    fill: #000000;
+}
+
+.display-graph button, .delete button {
+    border: none;
+    background-color: transparent;
+}
+
+.select-shift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+    background-color: var(--light-grey);
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.select-shift .range-selection {
+    display: flex;
+    gap: 10px;
+}
+
+.select-shift input, .select-shift select {
+    color: var(--grey);
+    padding: 5px;
+}
+
+.select-shift input:focus {
+    outline: none;
+}
+
+.select-shift .shift-button {
+    color: var(--black);
+    font-family: Poppins-Regular;
+    background-color: var(--golden);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}

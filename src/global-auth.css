@@ -9,6 +9,10 @@
     --font-color: #ffffff;
     --highlighter-blue:  #009dd1;
     --hover-blue: #016ba8;
+    --grey: #2b2b2c;
+    --black: rgb(19, 19, 19);
+    --light-grey: #d8d8d8;
+    --golden: rgb(255, 187, 0);
   }
 
   * {

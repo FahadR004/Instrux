@@ -57,6 +57,12 @@
     margin: 20px;
 }
 
+.device-details .address:hover, .device-details .device:hover {
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--font-color);
+}
+
 .labels {
     display: flex;
     justify-content: center;
@@ -97,6 +103,10 @@ input[type="checkbox"]:checked  + label{
     width: 90%;
     height: 400px;
     margin: 0px auto;
+}
+
+.graph-container canvas:hover {
+    cursor: pointer;
 }
 
 

@@ -1,4 +1,4 @@
-import "./global-auth.css"
+import "../../global-auth.css"
 import styles from "./Signup.module.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";

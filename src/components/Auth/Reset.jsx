@@ -1,4 +1,4 @@
-import "./global-auth.css"
+import "../../global-auth.css"
 import styles from "./Reset.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState, useRef, useContext } from "react";

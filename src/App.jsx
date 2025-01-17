@@ -8,7 +8,7 @@ import Reset from "./components/Auth/Reset";
 import Home from "./pages/Home"
 import Trends from "./pages/Trends.jsx"
 import Reports from "./pages/Reports.jsx"
-import Log from "./pages/Log.jsx"
+import Log from "./pages/Warning_Logs.jsx"
 import Intelligence from "./pages/Intelligence.jsx"
 import Organization from "./pages/Organization.jsx"
 import Users from "./pages/Users.jsx"

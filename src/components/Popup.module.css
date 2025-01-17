@@ -1,0 +1,52 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out;
+
+}   
+
+.popup-inner {
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    max-width: 640px;
+    background-color: var(--light-grey);
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+}
+
+.popup-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #8f8f8f;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.popup-inner .close-btn:hover {
+    cursor: pointer;
+    color: black;
+}
+
+@keyframes fadeIn {  /*Defines fadeIn animation*/
+
+    0% { /*Starting state of the animation.*/
+        transform: translateY(-700px);  /*Element is shifted downward*/
+    }
+
+    100% { /*Ending state of the animation.*/
+        transform: translateY(0px);  /*Element at original vertical position.*/
+    }
+    
+}
