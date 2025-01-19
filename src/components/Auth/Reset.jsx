@@ -81,7 +81,7 @@ const Reset = () => {
           <form className={styles.form} onSubmit={handleSubmit} method="POST">
             <div className={styles["logo-side"]}>   
               <h2 className={styles.logo1}>INSTRUX<span className={styles.hidden}>FFF</span></h2>
-              <h2 className={styles.logo2}><span className={styles.hidden}>FFF</span>SECURITY<span>F</span></h2>
+              <h2 className={styles.logo2}><span className={styles.hidden}>FFF</span>SECURITY</h2>
             </div>
             <div className={styles["input-side"]}>
               <h3 className={styles.welcome}>RESET PASSWORD</h3>
@@ -113,7 +113,7 @@ const Reset = () => {
             <button className={styles["reset-btn"]} type="submit" disabled={!validEmail ? true : false}>
                 Reset
                 </button>
-              <p className={styles.recall}>Can you recall it? <Link to="/login">Login</Link></p>
+              <p className={styles.recall}>Can you recall it? <Link to="/">Login</Link></p>
               <p className={styles.account}>Don't have an account? <Link to="/signup">Sign-up</Link></p>
             </div>
           </form>

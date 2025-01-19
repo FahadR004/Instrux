@@ -21,11 +21,10 @@
     margin-bottom: 1rem;
 }
 
-.main-content {
+/* .main-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
+} */
 
 .dropdown {
     display: flex;
@@ -96,5 +95,23 @@
 .buttons button:hover {
     background-color: var(--hover-blue);
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .body {
+        grid-template-columns: 1fr;
+    }
+    
+    .dir {
+        padding: 10px 16px;
+    }
+
+    .buttons {
+        gap: 20px;
+    }
+
+    .buttons .email {
+        margin-bottom: 30px;
+    }
 }
 

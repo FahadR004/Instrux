@@ -22,14 +22,14 @@
   }
   
   .logo-side {
-    background-color: #052883;
+    background-color: var(--hover-blue);
     padding: 10px;
     border-radius: 32px 0px 0px 32px;
     display: inline-flex;
   }
 
   .hidden {
-    color:#052883;
+    color:var(--hover-blue);
     user-select: none;
   }
 
@@ -77,7 +77,7 @@
   }
   
   .btn {
-    background-color: #052883;
+    background-color: var(--hover-blue);
     color: #FFFFFF;
     padding: 10px 15px;
     border: 0px;
@@ -86,11 +86,11 @@
     box-shadow: 2px 1px 5px #d3d6d9;
     letter-spacing: 1px;
     font-size: medium;
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   
   .btn:hover {
-    background-color: #042066;
+    background-color: var(--darker-blue);
   }
   
   .a {
@@ -104,10 +104,39 @@
     font-weight: bold;
     padding: 5px 13px;
     margin-bottom: 0.1rem;
+    border-radius: 5px;
   }
 
   
 .offscreen {
   position: absolute;
   left: -9999px;
+}
+
+@media (max-width: 800px) {
+  .form {
+    flex-direction: column;
+    border-radius: 5px;
+  }
+
+  .logo-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .logo-side .logo1, .logo-side .logo2 {
+    writing-mode: unset;
+    text-orientation: unset;
+  }
+
+  .input-side {
+    padding: 10px 20px;
+  }
 }

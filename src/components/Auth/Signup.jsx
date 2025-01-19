@@ -223,7 +223,7 @@ const Signup = () => {
                 type="submit" disabled={!validName || !validPwd || !validEmail || !validMatch ? true : false}>
                   Sign up
                 </button>
-                <p className={styles.account}>Already have an account? <Link to="/login">Login</Link></p>
+                <p className={styles.account}>Already have an account? <Link to="/">Login</Link></p>
               </div>
             </form>
           </main>

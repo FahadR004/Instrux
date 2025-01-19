@@ -1,4 +1,5 @@
 import { Line } from "react-chartjs-2";
+import zoomPlugin from "chartjs-plugin-zoom"
 import { Chart,
         LinearScale,
         CategoryScale,
@@ -16,9 +17,25 @@ Chart.register(
     LineElement, 
     Title,
     Tooltip, 
-    Legend 
+    Legend,
+    zoomPlugin
 )
   
+const zoomOptions = {
+  pan: {
+    enabled: true,
+    mode: "x"
+  },
+  zoom: {
+    wheel: {
+      enabled: true
+    },
+    pinch: {
+      enabled: true
+    },
+    mode: "x"
+  }
+};
     
 const ProjectedExpenses = () => {
 
@@ -33,7 +50,7 @@ const ProjectedExpenses = () => {
                     family: "Poppins-Regular",
                     weight: "bolder"
                 }
-            }
+            }, zoom: zoomOptions,
         }
     }
     const data = {
@@ -60,7 +77,7 @@ const ProjectedExpenses = () => {
               25, 27, 30, 28, 25, 22, 20, 18, 17, 16, 15, 14
             ],
             "borderColor": "rgba(75, 192, 192, 1)",
-            "backgroundColor": "rgba(0, 0, 0, 0.2)",
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
             "tension": 0.4
           }
         ]

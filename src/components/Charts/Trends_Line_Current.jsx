@@ -1,4 +1,5 @@
 import { Line } from "react-chartjs-2";
+import zoomPlugin, { zoom } from "chartjs-plugin-zoom"
 import { Chart,
         LinearScale,
         CategoryScale,
@@ -16,8 +17,25 @@ Chart.register(
     LineElement, 
     Title,
     Tooltip, 
-    Legend 
+    Legend,
+    zoomPlugin 
 )
+
+const zoomOptions = {
+  pan: {
+    enabled: true,
+    mode: "x"
+  },
+  zoom: {
+    wheel: {
+      enabled: true
+    },
+    pinch: {
+      enabled: true
+    },
+    mode: "x"
+  }
+};
   
     
 const Current = () => {
@@ -33,7 +51,8 @@ const Current = () => {
                     family: "Poppins-Regular",
                     weight: "bolder"
                 }
-            }
+            }, 
+            zoom: zoomOptions,
         }
     }
     const data = {

@@ -5,8 +5,9 @@ import Navbar from "../components/Navbar";
 import Options from "../components/Options";
 import Sidebar from "../components/Sidebar";
 import styles from "../styles/Intelligence.module.css"
-import ProjectedExpenses from "../components/Charts/Intelligence_Line_Expenses";
 import Popup from "../components/Popup";
+import ProjectedExpenses from "../components/Charts/Intelligence_Line_Expenses";
+import Shifts from "../components/Charts/Intelligence_Bar_Charts";
 
 const Intelligence = (props) => {
 
@@ -72,7 +73,7 @@ const Intelligence = (props) => {
                                             </svg>
                                             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                                                 <div className={styles["popup-graph"]}>
-                                                    <ProjectedExpenses/>
+                                                    <Shifts></Shifts>
                                                 </div>
                                             </Popup>
                                     {/* </form> */}

@@ -208,3 +208,18 @@
     border-radius: 5px;
     font-size: large;
 }
+
+@media (max-width: 1024px) {
+    .body {
+        grid-template-columns: 1fr;
+    }
+
+    .dir {
+        padding: 10px 16px;
+    }
+
+    .table {
+        width: 80%;
+    }
+
+}

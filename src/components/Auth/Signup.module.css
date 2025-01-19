@@ -22,13 +22,14 @@
     background-color: #ffffff;
     box-shadow: 15px 11px 5px #c5cad1;
     border-radius: 32px;
+    transform: scale(0.8);
   }
   
   .logo-side {
-    background-color: #052883;
+    display: inline-flex;
+    background-color: var(--hover-blue);
     padding: 20px 10px;
     border-radius: 32px 0px 0px 32px;
-    display: inline-flex;
     width: 20%;
   }
 
@@ -40,7 +41,7 @@
   }
 
   .hidden {
-    color:#052883;
+    color:var(--hover-blue);
     user-select: none;
   }
 
@@ -85,7 +86,7 @@
   }
   
   .signup-btn {
-    background-color: #052883;
+    background-color: var(--hover-blue);
     color: #FFFFFF;
     padding: 10px 15px;
     border: 0px;
@@ -100,11 +101,11 @@
   .signup-btn:disabled {
     cursor: default;
     pointer-events: none;
-    background-color: #2a3d6d;
+    background-color: var(--disabled-blue);
 }
   
   .signup-btn:hover {
-    background-color: #042066;
+    background-color: var(--darker-blue);
   }
   
   a {
@@ -124,4 +125,37 @@
 .offscreen {
   position: absolute;
   left: -9999px;
+}
+
+@media (max-width: 1024px) {
+  .form {
+    flex-direction: column;
+    border-radius: 5px;
+  }
+
+  .logo-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--hover-blue);
+    margin-bottom: 1em;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .logo-side .logo1, .logo-side .logo2 {
+    writing-mode: unset;
+    text-orientation: unset;
+  }
+
+  .input-side {
+    padding: 5px 0px;
+  }
+
 }

@@ -109,6 +109,9 @@ input[type="checkbox"]:checked  + label{
     cursor: pointer;
 }
 
+.last-graph {
+    margin-bottom: 30px;
+}
 
 .button-div {
     display: flex;
@@ -131,4 +134,16 @@ input[type="checkbox"]:checked  + label{
 .button-div button:hover {
     background-color: var(--hover-blue);
     cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .body {
+        grid-template-columns: 1fr;
+    }
+
+    .dir {
+        padding: 10px 16px;
+    }
+
 }

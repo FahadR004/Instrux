@@ -30,18 +30,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+
+    overflow-x: auto;
+
 }
 
 .card .header {
-    text-align: left !important;
     padding: 20px 10px;
+
 }
 
 .card .table {
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
- 
 }
 
 .table th {
@@ -57,6 +59,7 @@
 
 .table tr {
     background-color: var(--light-grey);
+    overflow-x: auto;
 }
 
 .table td {
@@ -74,12 +77,79 @@
     width: 90%;
 }
 
+.table .update-button:hover {
+    background-color: var(--hover-blue);
+    cursor: pointer;
+}
 
 .table .logs {
     color: var(--font-color);
-    background-color: var(--golden);
+    background-color: rgb(182, 41, 41);
 }
-
+    
 .table .logs text {
     padding: 10px;
+}
+
+@media (max-width: 1024px) {
+
+    .body {
+        grid-template-columns: 1fr;
+    }
+
+    .dir {
+        padding: 10px 16px;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+     
+    .table {
+        border: 1px solid black;
+    }
+
+
+    .table .empty {
+        display: none;
+    }
+
+    .table thead tr {
+        display: none;
+    }
+
+    .table tr {
+        display: block;
+        border: 1px solid black;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    .table .options-row td {
+        text-align: center;
+        width: 100%;
+    }
+
+    .table td {
+        text-align: right;
+        display: block;
+        font-size: 1em;
+        text-wrap: balance;
+    }
+
+    .table td::before {
+        content: attr(data-title);
+        float: left;
+        color: var(--black);
+        font-weight: bold;
+    }
+
+    .table .update-button {
+         margin-bottom: 10px;
+    }
+
+    
 }

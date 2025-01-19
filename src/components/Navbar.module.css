@@ -12,6 +12,7 @@
 
 .ul {
     display: flex;  
+    justify-content: center;
     align-items: center ;
     background-color: #2b2b2c;
     padding: 15px 50px;
@@ -57,9 +58,16 @@
     padding: 8px 10px;
     color: #ffffff;
     font-size: 15px;
+    margin-right: auto;
 }
 
 .logout-btn:hover {
   background-color: var(--hover-blue);
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .ul {
+    padding: 15px;
+  }
 }

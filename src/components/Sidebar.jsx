@@ -25,7 +25,7 @@ const Sidebar = (name) => {
 
     return (  
         <>
-        <div className={closeVal ? `${styles.sidebar} ${styles.close}` : styles['sidebar']}>
+        <div className={closeVal ? `${styles.sidebar} ${styles.close}` : `${styles.sidebar} ${styles.open}`}>
             <figure className={styles.figure}>
                     <img className={styles.image} src={PFP} alt="Anonymous Profile Image"></img>
                     <figcaption className={styles.figcaption}>SUPER USER</figcaption>

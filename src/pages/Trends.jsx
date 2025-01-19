@@ -84,7 +84,7 @@ const Trends = (props) => {
                     <div className={styles["graph-container"]}>
                         <Voltage/>
                     </div>
-                    <div className={styles["graph-container"]}>
+                    <div className={`${styles["graph-container"]} ${styles["last-graph"]}`}>
                         <Current/>
                 </div>
                 </div>

@@ -36,9 +36,9 @@ function App() {
         <div className="content">
         <SidebarContextProvider>
             <Routes>
-              <Route path="/login" element={<Login/>}/>
-              <Route path="/signup" element={<Signup/>}/>
-              <Route path="/reset" element={<Reset/>}/>
+                <Route path="/" element={<Login/>}/>
+                <Route path="/signup" element={<Signup/>}/>
+                <Route path="/reset" element={<Reset/>}/>
                 <Route path="/dashboard" element={<Home name="Live Monitoring"/>}/>
                 <Route path="/trends" element={<Trends name="Trends"/>}/>
                 <Route path="/reports" element={<Reports name="Reports"/>}/>

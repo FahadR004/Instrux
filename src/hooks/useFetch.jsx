@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 
 const useFetch = () => {
+    useEffect(()=> {
+
+    }, [])
+
     return ( 
         <>
         </>

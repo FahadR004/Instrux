@@ -18,7 +18,7 @@ const Log = (props) => {
                 <div className={styles.card}>
                     <h2 className={styles.header}>Warnings and Alarm Logs</h2>
                     <table className={styles.table}>
-                        <tbody>
+                        <thead>
                             <tr>
                                 <th>Device ID</th>
                                 <th>Location Name</th>
@@ -28,8 +28,10 @@ const Log = (props) => {
                                 <th>Date Time</th>
                                 <th>Message</th>
                             </tr>
-                            <tr>
-                                <td></td>
+                        </thead>
+                        <tbody>
+                            <tr className={styles["options-row"]}>
+                                <td className={styles.empty}></td>
                                 <td>
                                     <select className={styles.select} name="locations"  id="locations" placeholder="Location">
                                         <option value="%" selected="">All Locations</option>
@@ -91,9 +93,7 @@ const Log = (props) => {
                                     <option value="Warning">Warning</option>
                                     <option value="Alarm">Alarm</option></select>
                                 </td>
-                                <td>
-
-                                </td>
+                                <td className={styles.empty}></td>
                                 <td>
                                     <button className={styles["update-button"]}>
                                         Update
@@ -101,28 +101,31 @@ const Log = (props) => {
                                 </td>
                             </tr>
                             <tr className={styles.logs}>
-                                <td>128</td>
-                                <td>HPCC Building</td>
-                                <td>Selec_MFM376</td><td>Voltage Line Line Fluctuation</td>
-                                <td>Warning</td>
-                                <td>2024-11-12 11:07:27</td>
-                                <td>Line to Line Voltage is below define limit, it is 378.92V.</td>
+                                <td data-title="Device ID">128</td>
+                                <td data-title="Location Name">HPCC Building</td>
+                                <td data-title="Device Name">Selec_MFM376</td>
+                                <td data-title="Event Type">Voltage Line Line Fluctuation</td>
+                                <td data-title="Severity">Warning</td>
+                                <td data-title="Date Time">2024-11-12 11:07:27</td>
+                                <td data-title="Message">Line to Line Voltage is below define limit, it is 378.92V.</td>
                             </tr>
                             <tr className={styles.logs}>
-                                <td>128</td>
-                                <td>HPCC Building</td>
-                                <td>Selec_MFM376</td><td>Voltage Line Line Fluctuation</td>
-                                <td>Warning</td>
-                                <td>2024-11-12 11:07:27</td>
-                                <td>Line to Line Voltage is below define limit, it is 378.92V.</td>
+                                <td data-title="Device ID">128</td>
+                                <td data-title="Location Name">HPCC Building</td>
+                                <td data-title="Device Name">Selec_MFM376</td>
+                                <td data-title="Event Type">Voltage Line Line Fluctuation</td>
+                                <td data-title="Severity">Warning</td>
+                                <td data-title="Date Time">2024-11-12 11:07:27</td>
+                                <td data-title="Message">Line to Line Voltage is below define limit, it is 378.92V.</td>
                             </tr>
                             <tr className={styles.logs}>
-                                <td>128</td>
-                                <td>HPCC Building</td>
-                                <td>Selec_MFM376</td><td>Voltage Line Line Fluctuation</td>
-                                <td>Warning</td>
-                                <td>2024-11-12 11:07:27</td>
-                                <td>Line to Line Voltage is below define limit, it is 378.92V.</td>
+                                <td data-title="Device ID">128</td>
+                                <td data-title="Location Name">HPCC Building</td>
+                                <td data-title="Device Name">Selec_MFM376</td>
+                                <td data-title="Event Type">Voltage Line Line Fluctuation</td>
+                                <td data-title="Severity">Warning</td>
+                                <td data-title="Date Time">2024-11-12 11:07:27</td>
+                                <td data-title="Message">Line to Line Voltage is below define limit, it is 378.92V.</td>
                             </tr>
                         </tbody>
                     </table>

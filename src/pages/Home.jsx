@@ -67,7 +67,7 @@ const Home = (props) => {
             : styles["body"]
         }
       >
-        <Sidebar />
+        <Sidebar/>
         <main className={styles.main}>
           <Navbar />
           <p className={styles.dir}>Dashboard / {props.name}</p>

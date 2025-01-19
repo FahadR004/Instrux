@@ -26,7 +26,7 @@
   
   .logo-side {
     padding: 15px;
-    background-color: #052883;
+    background-color: var(--hover-blue);
     border-radius: 32px 0px 0px 32px;
     display: inline-flex;
   }
@@ -39,7 +39,7 @@
   }
 
   .hidden {
-    color:#052883;
+    color: var(--hover-blue);
     user-select: none;
   }
   
@@ -75,6 +75,10 @@
   .main-para, .account {
     margin-top: 0.1rem;
   }
+
+  .account {
+    margin-bottom: 0.5rem;
+  }
   
   .main-para, .recall, .account {
     color:#636364;
@@ -82,7 +86,7 @@
   }
   
   .reset-btn {
-    background-color: #052883;
+    background-color: var(--hover-blue);
     color: #FFFFFF;
     padding: 10px 15px;
     border: 0px;
@@ -92,17 +96,17 @@
     font-size: medium;
     letter-spacing: 1px;
     margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
   }
   
   .reset-btn:hover {
-    background-color: #042066;
+    background-color: var(--darker-blue);
   }
 
   .reset-btn:disabled {
     cursor: default;
     pointer-events: none;
-    background-color: #2a3d6d;
+    background-color: var(--disabled-blue);
   }
   
   .a {
@@ -116,11 +120,46 @@
     font-weight: bold;
     padding: 5px 13px;
     margin-bottom: 0.1rem;
+    border-radius: 5px;
   }
 
   
 .offscreen {
   position: absolute;
   left: -9999px;
+}
+
+@media (max-width: 800px) {
+  .form {
+    flex-direction: column;
+    border-radius: 5px;
+    min-width: 350px;
+  }
+
+  .logo-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--hover-blue);
+    margin-bottom: 1em;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .logo-side .logo1, .logo-side .logo2 {
+    writing-mode: unset;
+    text-orientation: unset;
+  }
+
+  .input-side {
+    padding: 0px;
+  }
+
 }
   

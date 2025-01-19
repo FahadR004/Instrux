@@ -1,4 +1,8 @@
+import { useRef } from "react";
 import { Line } from "react-chartjs-2";
+import zoomPlugin from "chartjs-plugin-zoom";
+
+
 import { Chart,
         LinearScale,
         CategoryScale,
@@ -6,7 +10,7 @@ import { Chart,
         LineElement, 
         Title,
         Tooltip, 
-        Legend 
+        Legend,
     } from "chart.js";
 
 Chart.register(
@@ -16,11 +20,30 @@ Chart.register(
     LineElement, 
     Title,
     Tooltip, 
-    Legend 
+    Legend,
+    zoomPlugin
 )
   
+
+const zoomOptions = {
+  pan: {
+    enabled: true,
+    mode: "x"
+  },
+  zoom: {
+    wheel: {
+      enabled: true
+    },
+    pinch: {
+      enabled: true
+    },
+    mode: "x"
+  }
+};
+
     
 const EnergyCurrentGraph = () => {
+
 
     const options = {
         maintainAspectRatio: false,
@@ -33,9 +56,11 @@ const EnergyCurrentGraph = () => {
                     family: "Poppins-Regular",
                     weight: "bolder"
                 }
-            }
-        }
+            },
+           zoom: zoomOptions,
     }
+  }
+    
     const data = {
         "labels": [
           "12:00 AM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM",
@@ -59,8 +84,8 @@ const EnergyCurrentGraph = () => {
       
 
     return ( 
-        <>
-            <Line data={data} options={options}></Line>
+        <> 
+          <Line data={data} options={options}></Line>
         </>
      );
 }

@@ -5,3 +5,9 @@
     margin-top: auto;
     padding: 20px 50px;
 }
+
+@media (max-width: 1200px) {
+    .footer {
+        display: none;
+    }
+}

@@ -1,4 +1,5 @@
 import { Line } from "react-chartjs-2";
+import zoomPlugin from "chartjs-plugin-zoom"
 import { Chart,
         LinearScale,
         CategoryScale,
@@ -18,7 +19,22 @@ Chart.register(
     Tooltip, 
     Legend 
 )
-  
+
+const zoomOptions = {
+  pan: {
+    enabled: true,
+    mode: "x"
+  },
+  zoom: {
+    wheel: {
+      enabled: true
+    },
+    pinch: {
+      enabled: true
+    },
+    mode: "x"
+  }
+};
     
 const ApparentPower = () => {
 
@@ -34,7 +50,7 @@ const ApparentPower = () => {
                     weight: "bolder"
                 },
                 align: "start"
-            }
+            }, zoom: zoomOptions,
         }
     }
     const data = {
